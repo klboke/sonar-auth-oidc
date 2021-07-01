@@ -32,7 +32,8 @@ import com.nimbusds.openid.connect.sdk.claims.UserInfo;
 public class OidcIdentityProvider implements OAuth2IdentityProvider {
 
   private static final Logger LOGGER = Loggers.get(OidcIdentityProvider.class);
-  public static final String KEY = "oidc";
+  //public static final String KEY = "oidc";
+  public static final String KEY = "sonarqube";//Used for compatibility with old users
 
   private final OidcConfiguration config;
   private final OidcClient client;
